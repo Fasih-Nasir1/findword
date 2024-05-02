@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: #19125ada;
+            color: white;
+            padding: 10px 20px;
+border: none;
+transition: 0.6s ease;
+            border-radius: 30px;
+        }
+        button:hover{
+            transform: scale(1.1);
+            color: #19125a ;
+        background-color: white;
+        border: 1px solid #19125a63;
+        }
+    </style>
+</head>
+<body>
+ <center>   <Button onclick="q1()">Find A Word OR Single Charecter</Button>
+ </center>
+    <BR>
+    <script>
+        var text = "Born Born BornBornBorn  Wazir Wazir  Wazir Wazir Wazir Wazir Wazir at Wazir Wazir Mansion in Karachi, Jinnah was trained as a barrister at Lincoln's Inn in London, England. Upon his return to India, he enrolled at the Bombay High Court, and took an interest in national politics, which eventually replaced his legal practice. Jinnah rose to prominence in the Indian National Congress in the first two decades of the 20th century. In these early years of his political career, Jinnah advocated Hindu–Muslim unity, helping to shape the 1916 Lucknow Pact between the Congress and the All-India Muslim League, in which Jinnah had also become prominent. Jinnah became a key leader in the All-India Home Rule League, and proposed a fourteen-point constitutional reform plan to safeguard the political rights of Muslims in the Indian subcontinent. In 1920, however, Jinnah resigned from the Congress when it agreed to follow a campaign of satyagraha, which he regarded as political anarchy.".toLocaleLowerCase();
+        document.write(` <center> ${text} </center>`)
+function q1(){
+var text = "Born Born BornBornBorn  Wazir Wazir Wazir  Wazir Wazir Wazir Wazir at Wazir Wazir Mansion in Karachi, Jinnah was trained as a barrister at Lincoln's Inn in London, England. Upon his return to India, he enrolled at the Bombay High Court, and took an interest in national politics, which eventually replaced his legal practice. Jinnah rose to prominence in the Indian National Congress in the first two decades of the 20th century. In these early years of his political career, Jinnah advocated Hindu–Muslim unity, helping to shape the 1916 Lucknow Pact between the Congress and the All-India Muslim League, in which Jinnah had also become prominent. Jinnah became a key leader in the All-India Home Rule League, and proposed a fourteen-point constitutional reform plan to safeguard the political rights of Muslims in the Indian subcontinent. In 1920, however, Jinnah resigned from the Congress when it agreed to follow a campaign of satyagraha, which he regarded as political anarchy.".toLocaleLowerCase();
+var user=prompt("Enter A Word").toLocaleLowerCase();
+var num=text.split(user).length-1;
+if(num > 0){
+    document.write("The Word Is " +`<mark> ${user}</mark> `+ " Is Present at " + num)
+}
+else{
+    document.write("The Word Is " + user + " Is Not Present")
+}
+}
+// var usefind="";
+// var num=0
+
+// // var userInput = prompt("Enter a word or single character:");
+// var userInput = "Wazir"
+// document.write(userInput.length+"<BR>")
+// document.write(text.split("Wazir"))
+
+// // userInput = userInput.toLowerCase();
+
+
+// var occurrences = text.split(userInput).length - 1;
+// document.write(occurrences)
+
+
+// if (occurrences > 0) {
+//     alert("'" + userInput + "' is present in the text " + occurrences + " time(s).");
+// } else {
+//     alert("'" + userInput + "' is not present in the text.");
+// }
+// Text provided
+// var text = "Born at Mansion in Karachi, Jinnah was trained as a barrister at Lincoln's Inn in London, England. Upon his return to India, he enrolled at the Bombay High Court, and took an interest in national politics, which eventually replaced his legal practice. Jinnah rose to prominence in the Indian National Congress in the first two decades of the 20th century. In these early years of his political career, Jinnah advocated Hindu–Muslim unity, helping to shape the 1916 Lucknow Pact between the Congress and the All-India Muslim League, in which Jinnah had also become prominent. Jinnah became a key leader in the All-India Home Rule League, and proposed a fourteen-point constitutional reform plan to safeguard the political rights of Muslims in the Indian subcontinent. In 1920, however, Jinnah resigned from the Congress when it agreed to follow a campaign of satyagraha, which he regarded as political anarchy.".toLowerCase();
+// var text="my name is fasih nasir fasih is name"
+
+// // var userInput = prompt("Enter a word or single character:").toLowerCase();
+// // var occurrences = text.toLowerCase().split(userInput).length - 1;
+// // var userInput = ""
+// var num=text.split("n").length-1;
+// document.write(num)
+// if (occurrences > 0) {
+//     alert("'" + userInput + "' is present in the text " + occurrences + " time(s).");
+// } else {
+//     alert("'" + userInput + "' is not present in the text.");
+// }
+
+    </script>
+</body>
+</html>
